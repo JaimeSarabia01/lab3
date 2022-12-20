@@ -1,0 +1,9 @@
+<h2>TV Shows</h2>
+
+<ul class= "tvshows" >
+  <li *ngFor="let tvshow of tvshows">
+    <a routerLink="/detail/{{tvshow.id}}">
+      <span class="badge">{{tvshow.id}}</span> {{tvshow.name}}
+    </a>
+  </li>
+</ul>

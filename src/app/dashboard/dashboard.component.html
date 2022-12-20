@@ -1,0 +1,8 @@
+<h2>Top TVShows</h2>
+<div class="tvshows-menu">
+  <a *ngFor="let tvshow of tvshows"
+  
+  routerLink="/detail/{{tvshow.id}}">
+    {{tvshow.name}}
+  </a>
+</div>

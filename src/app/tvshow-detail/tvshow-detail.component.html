@@ -1,0 +1,12 @@
+
+<div *ngIf="tvshow">
+
+    <h2>{{tvshow.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{tvshow.id}}</div>
+    <div>
+      <label for="tvshow-name">TV Show name: </label>
+      <input id="tvshow-name" [(ngModel)]="tvshow.name" placeholder="name">
+      <div></div>
+    </div>
+  <button type="button" (click)="goBack()">go back</button>
+  </div>
